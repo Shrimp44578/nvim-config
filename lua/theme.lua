@@ -174,6 +174,12 @@ local themes = {
             require "plugins.configs.materialui"
         end
     },
+    nordfox = {
+        "EdenEast/nightfox.nvim",
+        config = function()
+            vim.cmd [[colorscheme nordfox]]
+        end
+    },
 }
 
 M.set_active_theme = function(theme_name)
